@@ -1,0 +1,32 @@
+{
+  "employees": [
+    {
+      "name": "Savitha H",
+      "email": "savitha@gmail.com",
+      "phone": "123456789",
+      "gender": "female",
+      "id": "9c30"
+    },
+    {
+      "name": "Sushmitha Halagali",
+      "email": "sushmitha.halagali@gmail.com",
+      "phone": "1234567890",
+      "gender": "female",
+      "id": "6ee4"
+    },
+    {
+      "id": "836f",
+      "name": "Hrithik",
+      "email": "hrithik@gmail.com",
+      "phone": "8765432190",
+      "gender": "male"
+    },
+    {
+      "id": "63ff",
+      "name": "Bob",
+      "email": "bob@gmail.com",
+      "phone": "123456789",
+      "gender": "male"
+    }
+  ]
+}

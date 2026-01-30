@@ -1,0 +1,61 @@
+#listOfAllEmp{
+    width: 100%;
+}
+
+#listOfAllEmp > article{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#listOfAllEmp > article > h1{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: dodgerblue;
+    text-decoration: underline;
+}
+
+table , th , td {
+    border: 2px solid #ccc;
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+table tr:nth-child(even)
+{
+    background-color: #76a9e6;
+}
+
+.btn{
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.btn-edit{
+    background-color: green;
+}
+.btn-delete{
+    background-color: crimson;
+}
+.btn-view{
+    background-color: indigo;
+}
+
+.createBtn{
+    margin-bottom: 15px;
+}
+.createBtn > a {
+    text-decoration: none;
+    padding: 10px 25px;
+    background-color: dodgerblue;
+    color: #fff;
+    border-radius:6px ;
+}
