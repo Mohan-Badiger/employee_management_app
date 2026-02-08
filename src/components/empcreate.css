@@ -1,101 +1,124 @@
-/* MAIN WRAPPER */
+/* 🌌 Global Dark Background */
 .mainBlock {
-  width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0f2027, #000000);
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #000;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
 }
 
-/* FORM CONTAINER */
-#formBlock {
-  width: 360px;
-  background-color: #0a0a0a;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 24px;
-  border-radius: 6px;
+/* 🧊 Glassmorphism Card */
+.glassCard {
+  width: 380px;
+  padding: 35px 30px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow:
+    0 0 25px rgba(0, 255, 255, 0.15),
+    inset 0 0 20px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  animation: floatIn 0.8s ease-in-out;
 }
 
-/* FORM */
-#formBlock article form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
-/* TITLE */
-section > article > h1 {
+/* 🔮 Title */
+.glassCard h1 {
   text-align: center;
-  margin-bottom: 18px;
-  color: #ffffff;
-  font-size: 1.4rem;
+  margin-bottom: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #00fff0, #00aaff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* INPUTS */
+/* ✨ Inputs */
 .boxset {
   width: 100%;
-  padding: 8px 10px;
-  border-radius: 4px;
-  border: 1px solid #1f2937;
-  background-color: #050505;
-  color: #ffffff;
-  font-size: 0.9rem;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 14px;
+  transition: 0.3s;
 }
 
 .boxset::placeholder {
-  color: #9ca3af;
+  color: #aaa;
 }
 
-/* 🔥 GENDER RADIO – TEXT VISIBILITY FIX */
+.boxset:focus {
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0 12px #00fff0;
+}
+
+/* 🚻 Radio Buttons */
 .radioAndLabel {
   display: flex;
   justify-content: space-between;
+  margin: 15px 0 20px;
+}
+
+.radioAndLabel label {
+  display: flex;
   align-items: center;
-  padding: 8px 10px;
-  border-radius: 4px;
-  background-color: #050505;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #ffffff; /* ✅ TEXT COLOR */
-  font-size: 0.85rem;
-}
-
-/* SPACE BETWEEN RADIO & TEXT */
-.radioAndLabel input[type="radio"] {
-  accent-color: aqua;
-  margin-right: 4px;
-}
-
-/* ENSURE TEXT AFTER RADIO IS VISIBLE */
-.radioAndLabel {
-  text-shadow: 0 0 1px rgba(255, 255, 255, 0.4);
-}
-
-/* SUBMIT BUTTON */
-.submitting {
-  margin-top: 8px;
-  padding: 8px;
-  width: 100%;
-  background-color: aqua;
-  border-radius: 4px;
-  border: none;
-  font-size: 0.9rem;
+  gap: 6px;
   cursor: pointer;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.radioAndLabel input[type="radio"] {
+  accent-color: #00fff0;
+}
+
+/* 🚀 Submit Button */
+.submitting {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #00fff0, #0077ff);
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .submitting:hover {
-  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px #00fff0;
 }
 
-/* BACK LINK */
+/* 🔙 Back Link */
 .backhome {
-  margin-top: 10px;
-  text-decoration: none;
+  display: block;
+  margin-top: 18px;
   text-align: center;
-  color: #9ca3af;
-  font-size: 0.85rem;
+  color: #00fff0;
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.3s;
 }
 
 .backhome:hover {
-  color: aqua;
+  text-shadow: 0 0 8px #00fff0;
 }
